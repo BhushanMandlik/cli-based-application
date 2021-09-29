@@ -1,0 +1,40 @@
+{
+    "emp_details": [
+        {
+            "employee_id": "12345",
+            "name": "Rakesh Patil",
+            "user_type": "Admin",
+            "project_name": "Employee Data Management",
+            "year_of_exp": "8",
+            "skill_sets": "System Administration, Database Management",
+            "joining_date": "28/05/2014",
+            "DOB": "13/09/1992",
+            "age": "30",
+            "phone_number": "9745862314"
+        },
+        {
+            "employee_id": "6",
+            "name": "Abhay Sharma",
+            "user_type": "operator",
+            "project_name": "app development",
+            "year_of_exp": "10",
+            "skill_sets": "android",
+            "joining_date": "28/06/2019",
+            "DOB": "28/03/1998",
+            "age": "23",
+            "phone_number": "9874562145"
+        },
+        {
+            "employee_id": "100",
+            "name": "Lalit Pawar",
+            "user_type": "developer",
+            "project_name": "web development",
+            "year_of_exp": "6",
+            "skill_sets": "html, css, bootstrap",
+            "joining_date": "31/08/2017",
+            "DOB": "12/05/2000",
+            "age": "21",
+            "phone_number": "8745632145"
+        }
+    ]
+}
