@@ -1,0 +1,61 @@
+{
+    "emp_details": [
+        {
+            "employee_id": 12345678910,
+            "name": "Bhushan Mandlik",
+            "user_type": "Admin",
+            "project_name": [
+                "Employee Data Management"
+            ],
+            "year_of_exp": 8,
+            "skill_sets": [
+                "System Administration",
+                "Database Management"
+            ],
+            "joining_date": "28-05-2014",
+            "DOB": "13-09-1992",
+            "age": 30,
+            "phone_number": 9745862314
+        },
+        {
+            "employee_id": 1,
+            "name": "Rakesh Sharma",
+            "user_type": "Employee",
+            "project_name": [
+                "food app",
+                "birthday app"
+            ],
+            "year_of_exp": 5,
+            "skill_sets": [
+                "flutter",
+                "dart",
+                "firebase"
+            ],
+            "joining_date": "22-08-2018",
+            "DOB": "28-05-1998",
+            "age": 23,
+            "phone_number": 8974563214
+        },
+        {
+            "employee_id": 2,
+            "name": "Rajesh om mehata",
+            "user_type": "Employee",
+            "project_name": [
+                "app",
+                "web"
+            ],
+            "year_of_exp": 10,
+            "skill_sets": [
+                "flutter",
+                "dart",
+                "html",
+                "css",
+                "javascript"
+            ],
+            "joining_date": "22-08-2020",
+            "DOB": "12-05-2001",
+            "age": 20,
+            "phone_number": 9874563210
+        }
+    ]
+}
