@@ -1,5 +1,6 @@
 import json     # JavaScript Object Notation
 import utility_functions
+import logging
 
 def delete_employee_record():
     d_emp_id = input("Enter Employee id to delete record: ")
@@ -25,9 +26,12 @@ def delete_employee_record():
                 data["emp_details"].pop(employee_id_exist)
 
                 with open('employees_data.json', 'w') as file:
-                    json.dump(data, file, indent=4)       
+                    json.dump(data, file, indent=4)      
 
-                print("Employee record deleted successfully")
+                logging.basicConfig(filename='employees_logs.txt', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
+                logging.info('Employee id - {} record deleted successfully'.format(d_emp_id))
+                
+                # print("Employee record deleted successfully")
             elif(decision_to_delete_record == "N"):
                 print("Sucessfully out of delete section")
             else:

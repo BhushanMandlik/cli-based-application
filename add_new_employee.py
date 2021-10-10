@@ -1,5 +1,6 @@
 import json     # JavaScript Object Notations
 import utility_functions
+import logging
 
 class Employee:
     def __init__(self, employee_id, name, user_type, project_name, year_of_exp, skill_sets, joining_date, DOB, age, phone_number):
@@ -42,4 +43,7 @@ class Employee:
                 data["emp_details"].append(temp_dict)
                 with open('employees_data.json', 'w') as f:
                     json.dump(data, f, indent=4)
-                    print("New employee record added successfully")
+
+                    logging.basicConfig(filename='employees_logs.txt', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
+                    logging.info('New employee id - {}, name - {} record added successfully'.format(self.employee_id, self.name))
+                    # print("New employee record added successfully")

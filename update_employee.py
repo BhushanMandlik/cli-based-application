@@ -1,5 +1,6 @@
 import json     # JavaScript Object Notation
 import utility_functions
+import logging
 
 def update_emp_record():
     up_emp_id = input("Enter Employee id to update record: ")
@@ -87,4 +88,8 @@ def update_emp_record():
 
             with open('employees_data.json', 'w') as f:
                 json.dump(data, f, indent=4)
-                print("Employee record updated successfully")
+
+                logging.basicConfig(filename='employees_logs.txt', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
+                logging.info('Employee id - {} record updated successfully'.format(up_emp_id))
+
+                # print("Employee record updated successfully")
